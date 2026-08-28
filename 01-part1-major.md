@@ -93,6 +93,14 @@ part different number of bits and the last FX bit to be optional. The concept
 of octets remains. If the FX bit is present, it must be the last bit in the
 octet.
 
+For example: one octet, followed by 2 octets extensions (where there are 3
+actual extensions) is now formalized as `[7, fx, 15, fx]`, where it is implicit
+that the last `[15, fx]` pair can repeat as many times as necessary. In the new
+setting, this must be defined explicitely as `[7, fx, 15, fx, 15, fx, 15, fx]`.
+There is no implicit repetition. In addition, the last `fx` flag is optional
+if the actual data extends one more bit. It is now possible to define some old
+exteded item to be in the form `[7, fx, 15, fx, 15, fx, 16]`.
+
 The category 021, prior and including edition 2.1 now becomes "valid asterix".
 All other "regular" editions remain valid too. The new structure is just more
 general, to cope with the problem.
