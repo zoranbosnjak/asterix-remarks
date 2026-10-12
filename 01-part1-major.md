@@ -177,3 +177,30 @@ such as part-1. In other words:
   asterix, depending on a use case. For example, it might skip all corner cases
   described in this document and only implement "the simple asterix".
 
+# Conclusion
+
+Part-1 document shall be an independent base document, describing what is
+considered to be "asterix". It shall contain no reference to the concrete
+asterix category and/or editions. There should be sufficient details about
+structural variations, to cover all existing and future asterix definitions.
+
+The latest edition of part-1 shall always follow those rules.
+
+> To achive this objective, it is not possible to change the existing/published
+> asterix editions. Only the part-1 can be updated.
+
+Some of the required updates to part-1 are:
+
+- Clearly describe a purpose of the document.
+- Describe RFS indicator mechanism.
+- Describe multiple UAP situation.
+- Update description of the "extended" item.
+- Update the blocking/non-blocking concept.
+- Describe the "dependent structure" problem.
+- Remove all references to the concrete categories/editions.
+
+It is worth to note that the existing asterix specifications already provide
+sufficient details to implement asterix individually, by handling "edition by
+edition". The part-1 updates are only necessary to implement *generic asterix
+processing* programs, which cover all asterix in an unified way.
+
