@@ -4,6 +4,12 @@
 #show quote: set align(left)
 #show quote: set text(olive)
 #show quote.where(block: true): block.with(stroke: (left: 2pt + gray, rest: none))
+#show raw.where(block: true): block.with(
+  fill: silver,
+  inset: 10pt,
+  radius: 4pt,
+  width: 100%,
+)
 
 #show terms: it => {
   it.children
