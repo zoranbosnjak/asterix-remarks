@@ -1,5 +1,6 @@
 #let horizontalrule = line(start: (25%,0%), end: (75%,0%))
 
+#show link: set text(blue)
 #show quote: set align(left)
 #show quote: set text(olive)
 #show quote.where(block: true): block.with(stroke: (left: 2pt + gray, rest: none))

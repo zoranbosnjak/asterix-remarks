@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if (( $# != 1 )); then
-    >&2 echo "A markdown input file is required!"
+    >&2 echo "Markdown input file is required!"
     exit 1
 fi
 
